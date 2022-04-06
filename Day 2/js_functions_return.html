@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions With Return Value</title>
+</head>
+<body>
+    <script>
+        
+        function sum(math, eng, science, drawing){
+            var a = math+eng+science+drawing
+            return a
+        }
+        function percentage(total){
+            var per = total/120 *100
+            document.write("<br>Percentage of 4 Subjects ", per)
+        }
+        avg = sum(23,25,22,20)
+        document.write("Total: ",avg)
+        percentage(avg)
+    </script>
+</body>
+</html>
