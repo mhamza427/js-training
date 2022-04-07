@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Submit Function</title>
+</head>
+<body>
+
+        <form>
+            <label for="">Name: </label> <input type="text" id="Name" onfocus="focusfunc(this)" onblur="blurfunc(this)"><br>
+            <label for="">Age : </label> <input type="text" id="Age" onfocus="focusfunc(this)" onblur="blurfunc(this)"><br>
+            <label for="">Gender</label> <input type="checkbox" id="">
+        </form>
+        <script>
+            function focusfunc(params){
+                params.style.background = "Lime"
+            }
+            function blurfunc(params){
+                params.style.background = ""
+            }
+        </script>
+</body>
+</html>
