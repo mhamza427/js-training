@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Fixed</title>
+</head>
+<body>
+    <!-- 
+        prototype allows you to add new properties and methods to numbers.
+    -->
+    <script>
+        Number.prototype.divider = function() {
+            return this.valueOf() / 2;
+        };
+        let n = 55;
+        let x = n.divider();
+        document.write(x)
+    </script>
+</body>
+</html>

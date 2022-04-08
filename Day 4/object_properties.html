@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Properties.</title>
+</head>
+<body>
+    <script>
+        var person = {
+            fname: "Muhammad",
+            lname: "Hamza",
+            age: 21,
+            qualification: '"Bachelors in Software Engineering."'
+        }
+        function about(){
+            document.write("Hi! my name is ",person["fname"]," ",person["lname"],". My age is ",person["age"],". My Qualification is ",person["qualification"])
+        }
+    </script>
+    <button onclick="about()">About me!</button>
+</body>
+</html>
