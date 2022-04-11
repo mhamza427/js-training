@@ -11,7 +11,13 @@
         The toString() method returns a number as a string.
     -->
     <script>
-        document.write(10<20);
+        let a = Boolean(false)
+        a = toString(a)
+        document.write(a);
+        a = toSource(a)
+        document.write(a);
+        a = valueOf(a)
+        document.write(a);
     </script>
 </body>
 </html>
