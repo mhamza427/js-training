@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const d = new Date("July 21, 1983 01:15:30:15")
+        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        //GetDate
+        let date = d.getDate()
+        document.write(date)
+        //GetDay
+        let day = d.getDay()
+        document.write("<br>",day)
+        //GetYear
+        let year = d.getFullYear()
+        document.write("<br>", year)
+        //GetHours
+        let hour = d.getHours()
+        document.write("<br>", hour)
+        //MilliSecond
+        let ms = d.getMilliseconds()
+        document.write("<br>", ms)
+        //GetMinutes
+        let minutes = d.getMinutes()
+        document.write("<br>",minutes)
+        //GetMonth
+        let month = d.getMonth()
+        document.write("<br>", month)
+        //GetSeconds
+        let seconds = d.getSeconds()
+        document.write("<br>", seconds)
+        //GetTime
+        let time = d.getTime()
+        document.write("<br>", time)
+        //TimeZoneoffSet
+        let diff = d.getTimezoneOffset()
+        document.write(diff)
+        //UTCDate
+        let utcdate = d.getUTCDate()
+        document.write("<br>",utcdate)
+        //UTCDay
+        let utcday = weekday[d.getUTCDay()]
+        document.write("<br>",utcday)
+        //Get UTC Year
+        let utcyear = d.getUTCFullYear()
+        document.write("<br>",utcyear)
+        //Get UTC Hour
+        let utchour = d.getUTCHours()
+        document.write("<br>",utcdate)
+        //Get UTC Milli Second
+        let utcms = d.getUTCMilliseconds()
+        document.write("<br>",utcms)
+        //Get UTC Minutes
+        let utcminutes = d.getUTCMinutes()
+        document.write("<br>",utcminutes)
+        //Get UTC Month
+        let utcmonth = d.getUTCMonth()
+        document.write("<br>",utcmonth)
+        //Get UTC Second
+        let utcseconds = d.getUTCSeconds()
+        document.write("<br>", utcseconds)
+        //CUrrent
+        let currentms = Date.now()
+        document.write("<br>",currentms)
+        //Parse
+        let parsems = Date.parse("March 21, 2012")
+        document.write("<br>", parsems)
+
+
+        const b = new Date()
+        //Set Date
+        let stdate = b.setDate(15)
+        document.write("<br>", stdate)
+        //Set Year
+        let styear = b.setFullYear("1995")
+        document.write("<br>", styear)
+        //Set Hours
+        let sthours = b.setHours(12)
+        document.write("<br>", sthours)
+        //Set Milli Second
+        let stms = b.setMilliseconds(192)
+        document.write("<br>", stms)
+        //Set Minutes
+        let stminutes = b.setMinutes(17)
+        document.write("<br>", stminutes)
+        //Set Month
+        let stmonth = b.setMonth(4)
+        document.write("<br>", stmonth)
+        //Set Second
+        let stsecond = b.setSeconds(35)
+        document.write("<br>", stsecond)
+        //Set Time
+        let sttime = b.setTime(1332403882588)
+        document.write("<br>", sttime)
+        //Set UTC Date
+        let stUTCdate = b.setUTCDate(15)
+        document.write("<br>", stUTCdate)
+        //Set UTC Year
+        let stUTCyear = b.setUTCFullYear("1995")
+        document.write("<br>", stUTCyear)
+        //Set UTC Hours
+        let stUTChours = b.setUTCHours(15)
+        document.write("<br>", stUTChours)
+        //Set UTC Milli Second
+        let stUTCms = b.setUTCMilliseconds(192)
+        document.write("<br>", stUTCms)
+        //Set UTC Minutes
+        let stUTCminutes = b.setUTCMinutes(17)
+        document.write("<br>", stUTCminutes)
+        //Set UTC Month
+        let stUTCmonth = b.setUTCMonth(4)
+        document.write("<br>", stUTCmonth)
+        //Set UTC Second
+        let stUTCsecond = b.setUTCSeconds(35)
+        document.write("<br>", stUTCsecond)
+        //Date String
+        let text = b.toDateString()
+        document.write("<br>", text)
+        //ISO String
+        let textISO = b.toISOString()
+        document.write("<br>", textISO)
+        //JSON String
+        let textJson = b.toJSON()
+        document.write("<br>", textJson)
+        //Date Locale String
+        let textlocale = b.tolocaleDateString()
+        document.write("<br>", textlocale)
+        //Date Locale Time String
+        let textlocaletime = b.toLocaleTimeString()
+        document.write("<br>", textlocaletime)
+        //Locale String
+        let textlocaleString = b.toLocaleString()
+        document.write("<br>", textlocaleString)
+        //To String
+        let texttoString = b.toString()
+        document.write("<br>", texttoString)
+        //To Time String
+        let toTimeString = b.toTimeString()
+        document.write("<br>", toTimeString)
+        //To UTC String
+        let toUTCString = b.toUTCString()
+        document.write("<br>", toUTCString)
+        //UTC MS
+        let UTCms = Date.UTC(2020, 02, 30)
+        document.write("<br>", UTCms)
+        //UTC MS
+        let valueofms = b.valueOf()
+        document.write("<br>", valueofms)
+
+
+    </script>
+</body>
+</html>
