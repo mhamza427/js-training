@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RollOver with Mouse Event</title>
+    <style>
+        .imagetag{
+            height: 300px;
+            width: 500px;
+        }
+    </style>
 </head>
 <body> 
     <script>
@@ -16,7 +22,7 @@
             }
     </script>
     <a href="#" onmouseover="document.img1.src=image2.src" onmouseout="document.img1.src=image1.src" >
-        <img name="img1" src="images/img1.jpeg" alt="">
+        <img name="img1" class="imagetag" src="images/img1.jpeg" alt="">
     </a>
 </body>
 </html>
