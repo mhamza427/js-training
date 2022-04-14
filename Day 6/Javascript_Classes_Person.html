@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Classes</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+        }
+        var p1 = new Person("John", 30);
+        var p2 = new Person("Mary", 25);
+        var p3 = new Person("Mike", 28);
+        document.write("<br>p1.name = " + p1.name);
+        document.write("<br>p1.age = " + p1.age);
+        document.write("<br>p2.name = " + p2.name);
+        document.write("<br>p2.age = " + p2.age);
+        document.write("<br>p3.name = " + p3.name);
+        document.write("<br>p3.age = " + p3.age);
+    </script>
+</body>
+</html>

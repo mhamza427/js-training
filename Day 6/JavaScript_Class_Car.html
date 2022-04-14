@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Car Class</title>
+</head>
+<body>
+    <script>
+        class Car {
+            constructor(make, model, year) {
+                this.make = make;
+                this.model = model;
+                this.year = year;
+            }
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+        var c1 = new Car("Ford", "Fiesta", "2015");
+        var c2 = new Car("Honda", "Civic", "2016");
+        var c3 = new Car("Toyota", "Corolla", "2017");
+        document.write("<h3>Car 1</h3>");
+        document.write("<br>Markers = " + c1.make);
+        document.write("<br>Model = " + c1.model);
+        document.write("<br>Year = " + c1.year);
+        document.write("<br>Since Usage = " + c1.age());
+        document.write("<h3>Car 2</h3>");
+        document.write("<br>Makers = " + c2.make);
+        document.write("<br>Model = " + c2.model);
+        document.write("<br>Year = " + c2.year);
+        document.write("<br>Since Usage = " + c2.age());
+        document.write("<h3>Car 3</h3>");
+        document.write("<br>Makeers = " + c3.make);
+        document.write("<br>Model = " + c3.model);
+        document.write("<br>Year = " + c3.year);
+        document.write("<br>Since Usage = " + c3.age());
+    </script>
+</body>
+</html>

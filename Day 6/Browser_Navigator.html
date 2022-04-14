@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Navigator</title>
+</head>
+<body>
+    <script>
+        let x = window.navigator.appCodeName;
+        document.write("appCodeName Navigator ",'"',x,'"');
+        x = window.navigator.appName;
+        document.write("<br>appName Navigator ",'"',x,'"');
+        x = window.navigator.appVersion;
+        document.write("<br>appVersion Navigator ",'"',x,'"');
+        x = window.navigator.cookieEnabled;
+        document.write("<br>cookieEnabled Navigator ",'"',x,'"');
+        x = window.navigator.platform;
+        document.write("<br>platform Navigator ",'"',x,'"');
+        x = window.navigator.userAgent;
+        document.write("<br>userAgent Navigator ",'"',x,'"');
+        x = window.navigator.language;
+        document.write("<br>language Navigator ",'"',x,'"');
+        x = window.navigator.onLine;
+        document.write("<br>onLine Navigator ",'"',x,'"');
+        x = window.navigator.maxTouchPoints;
+        document.write("<br>maxTouchPoints Navigator ",'"',x,'"');
+        x = window.navigator.product;
+        document.write("<br>product Navigator ",'"',x,'"');
+        x = window.navigator.productSub;
+        document.write("<br>productSub Navigator ",'"',x,'"');
+        x = window.navigator.vendor;
+        document.write("<br>vendor Navigator ",'"',x,'"');
+        x = window.navigator.vendorSub;
+        document.write("<br>vendorSub Navigator ",'"',x,'"');
+        x = window.navigator.geolocation;
+        document.write("<br>geolocation Navigator ",'"',x,'"');
+        x = window.navigator.javaEnabled();
+        document.write("<br>javaEnabled Navigator ",'"',x,'"');
+    </script>
+</body>
+</html>
