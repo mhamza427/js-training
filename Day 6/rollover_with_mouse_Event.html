@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RollOver with Mouse Event</title>
 </head>
-<body>
+<body> 
     <script>
-       var img1 = img1.src="https://cdn.pixabay.com/photo/2018/09/30/16/26/sun-3713835__340.jpg"
-       var img2 = img2.src="https://media.istockphoto.com/photos/choose-the-way-picture-id921878978?k=20&m=921878978&s=170667a&w=0&h=JCTursWLztQ39kgl8n30AhcumDumq19mt8lsPfQvJl0=" 
+            if(document.images){
+                var image1 = new Image();
+                image1.src = "images/img1.jpeg";
+                var image2 = new Image();
+                image2.src = "images/img2.jpeg";
+            }
     </script>
-    <a href="#" onmouseover="img1" onmouseout="img2" >
-        <img src="https://cdn.pixabay.com/photo/2018/09/30/16/26/sun-3713835__340.jpg" alt="">
+    <a href="#" onmouseover="document.img1.src=image2.src" onmouseout="document.img1.src=image1.src" >
+        <img name="img1" src="images/img1.jpeg" alt="">
     </a>
 </body>
 </html>
